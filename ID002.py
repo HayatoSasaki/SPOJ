@@ -1,25 +1,31 @@
 # PRIME1 - Prime Generator | https://www.spoj.com/problems/PRIME1/
 
+global primeList
+
+def sieve(n1: int):
+    n1 += 1
+    if n1 >= 2: # Se n == 1 nem se dá o trabalho.
+        isPrime = [True] * n1 # Intervalo [0,n].
+        isPrime[0] = False # Skippa 0.
+        isPrime[1] = False # Skippa 1.
+        for i in range(2, n1): # Marca os primes.
+            if isPrime[i]:
+                primeList.append(i)
+                for j in range(i*i, n1, i): # Elimina os multiplos.
+                    isPrime[j] = False
+    return
+
+def output(m2,n2: int):
+    sieve(n2) # Guarda os primes até n via Simple Sieve.
+    p = 0
+    while m2 > primeList[p]: # Acha o começo.
+        p += 1
+    for pp in range(p,len(primeList)): # Printa os primes até n.
+        print(primeList[pp])
+
+# ------- Main.
 t = int(input()) # Número de testes.
-
-def prime(p):
-    i = 5 # Checker.
-
-    if p == 1 : # Skippa o 1.
-        return False
-    if p == 2 or p == 3: # Prima o 2 e 3.
-        return True
-    if p % 2 == 0 or p % 3 == 0 : # Skippa divisíveis deles.
-        return False
-    while i*i <= p:
-        if p % i == 0 or p % (i+2) == 0:
-            return False
-        i += 6 
-    return True
-
 for x in range(t): # Realiza 't' testes.
-    m, n = [int(m) for m in input().split()] # Recebe o intervalo.
-
-    for m in range(m,n+1): # Checka o intervalo.
-        if prime(m): # Se retornar True, printa.
-            print(m)
+    m, n = [int(i) for i in input().split()] # Recebe o intervalo.
+    primeList = [] 
+    output(m,n)
