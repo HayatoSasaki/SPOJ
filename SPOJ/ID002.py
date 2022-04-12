@@ -3,7 +3,7 @@
 from math import isqrt
 
 def prime(p: int): # Prime checker.
-    for test in range(2,isqrt(p)+1): # [3, √p]
+    for test in range(3,isqrt(p)+1): # [3, √p]
         if p % test == 0:
             return False
     return True
