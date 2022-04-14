@@ -1,5 +1,5 @@
 # Verðandi
-A study repository to solve problems in Python.
+A study repository to solve problems in Python.<br>
 2022~
 
 ## Sphere Online Judge (SPOJ)
