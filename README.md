@@ -1,6 +1,11 @@
-# Spoj-Problems 
+# Verðandi
+A study repository to solve problems in Python.
+2022~
 
-<p>
-Sphere Online Judge (SPOJ)<br>
+## Sphere Online Judge (SPOJ)
+
 Problems link: https://www.spoj.com/problems/classical/
-</p>
+
+## Codewars
+
+Problems link: https://www.codewars.com/r/F0Sasw/
