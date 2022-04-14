@@ -3,4 +3,4 @@
 
 def is_isogram(word):
     return len(word) == len(set(word.lower())) 
-# If there is any repeating letter the lenght will be different, because of set, and return False.
+# If there is any duplicate character the lenght will be different, because of set, and return will be False.
