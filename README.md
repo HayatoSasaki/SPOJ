@@ -3,8 +3,8 @@
 ## Data Science
 
 ### Visualization:
-
     import matplotlib.pyplot as plt
+### Analysis:
     import pandas as pd
 
 ## Coding Challenges
