@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-data = open('Data Science\Visualization\population_growth.csv').readlines()
+data = open('Data Science\Visualization\Case Study 01 - Population Growth\population_growth.csv').readlines()
 
 x = []
 y = []
