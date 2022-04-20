@@ -1,11 +1,18 @@
 # Verðandi
-A study repository to solve problems in Python.<br>
-2022~
 
-## Sphere Online Judge (SPOJ)
+## Data Science
+
+### Visualization:
+
+    import matplotlib.pyplot as plt
+    import pandas as pd
+
+## Coding Challenges
+
+### Codewars:
+
+Problems link: https://www.codewars.com/users/GabeSoares/completed
+
+### Sphere Online Judge (SPOJ):
 
 Problems link: https://www.spoj.com/problems/classical/
-
-## Codewars
-
-Problems link: https://www.codewars.com/r/F0Sasw/
