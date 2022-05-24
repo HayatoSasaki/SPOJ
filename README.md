@@ -1,4 +1,4 @@
-# Verðandi
+# Skuld
 
 ## Coding Challenges
 
